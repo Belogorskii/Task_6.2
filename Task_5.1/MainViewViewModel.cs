@@ -50,8 +50,7 @@ namespace Task_5._1
             RaiseCloseRequest();
 
         }
-        
-        public event EventHandler CloseRequested;
+                  public event EventHandler CloseRequested;
         private void RaiseCloseRequest()
         { 
             CloseRequested?.Invoke(this, EventArgs.Empty);
